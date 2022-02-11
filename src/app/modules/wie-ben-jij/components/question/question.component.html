@@ -1,0 +1,31 @@
+<div class="notification {{className}} mt-3">
+    <div class="columns">
+        <div class="column is-size-3">
+            {{question?.question}}
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column control">
+            <label class="radio">
+                <input type="radio" [name]="groupName">
+                {{question?.answer_1}}
+            </label>
+            <br>
+            <label class="radio">
+                <input type="radio" [name]="groupName">
+                {{question?.answer_2}}
+            </label>
+            <br>
+            <label class="radio">
+                <input type="radio" [name]="groupName">
+                {{question?.answer_3}}
+            </label>
+            <br>
+            <label class="radio">
+                <input type="radio" [name]="groupName">
+                {{question?.answer_4}}
+            </label>
+        </div>
+    </div>
+</div>

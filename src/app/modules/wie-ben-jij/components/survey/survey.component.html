@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="notification is-warning">
+    <div class="columns">
+        <div class="column field">
+            <label class="label">Kies je speltak!</label>
+            <div class="control">
+                <div class="select" style="width: 100%">
+                    <select [(ngModel)]="selectedGroup" style="width: 100%" (change)="changeSelectedGroup()">
+                        <option *ngFor="let group of groups" [ngValue]="group.group">{{group.name}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column field">
+            <label class="label">Wie ben jij?</label>
+            <div class="control">
+                <div class="select" style="width: 100%">
+                    <select [(ngModel)]='selectedPerson' style="width: 100%">
+                        <option *ngFor="let selected of selectedGroup" [ngValue]="selected.id">{{selected.name}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-question [className]="'is-primary'" [question]="question_1"></app-question>
+<app-question [className]="'is-link is-light'" [question]="question_2"></app-question>
+<app-question [className]="'is-info'" [question]="question_3"></app-question>
+<app-question [className]="'is-success is-light'" [question]="question_4"></app-question>
+<app-question [className]="'is-warning'" [question]="question_5"></app-question>
+<app-question [className]="'is-danger is-light'" [question]="question_6"></app-question>
+<app-question [className]="'is-primary is-light'" [question]="question_7"></app-question>
+<app-question [className]="'is-link'" [question]="question_8"></app-question>
+<app-question [className]="'is-info is-light'" [question]="question_9"></app-question>
+<app-question [className]="'is-warning is-light'" [question]="question_10"></app-question>
+<div class="columns is-centered mt-4">
+    <div class="column">
+        <button routerLink="/result/{{selectedPerson}}" [disabled]="disableButton" routerLink="/survey" class="button is-rounded is-success is-large is-fullwidth">Welke carnavalsartiest ben ik?</button>
+    </div>
+</div>

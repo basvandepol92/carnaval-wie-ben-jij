@@ -1,0 +1,24 @@
+<div class="columns is-centered mt-4 mb-4">
+    <div class="column is-three-quarters">
+        <div class="notification is-link has-text-centered is-size-2">
+            Oooohhhh <b>{{selectedPerson.name}}</b>, met al die antwoorden ben jij...?!
+        </div>
+    </div>
+</div>
+<div class="notification is-warning is-light has-text-centered">
+    <div class="columns is-centered mt-2">
+        <div id="avatar" [ngStyle]="{'background-image': 'url(' + carnavalsArtist.url + ')'}"></div>
+    </div>
+    <div class="columns is-centered">
+        <div class="column">
+            <span class="is-size-3">{{carnavalsArtist.name}}</span>
+        </div>
+    </div>
+</div>
+<div class="columns is-centered">
+    <div class="column">
+        <div class="notification has-text-centered">
+            Zoek snel de rest van de mensen bij elkaar met hetzelfde resultaat... <b class="is-underlined">Jullie vormen samen een team!</b>
+        </div>
+    </div>
+</div>
