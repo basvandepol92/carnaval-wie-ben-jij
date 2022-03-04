@@ -7,8 +7,6 @@ export const RowanGroup = [
     { id: 6, name: 'Milan'},
     { id: 7, name: 'Niels'},
     { id: 8, name: 'Sem'},
-    { id: 9, name: 'Stan'},
-    { id: 10, name: 'Teun'},
     { id: 11, name: 'Thijs'}
   ]
 export const Rowans = 'Rowans';

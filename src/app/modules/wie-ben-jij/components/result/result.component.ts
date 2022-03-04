@@ -21,53 +21,46 @@ export class ResultComponent implements OnInit {
     this.selectedPerson = this.persons.find((person) => person.id === parseInt(this._activatedRoute.snapshot.params.id))
 
     switch (this.selectedPerson.id) {
-      case 9:
-      case 3:
-      case 16:
       case 20:
-      case 26:
-      case 32:
+      case 27:
+      case 1:
+      case 7:
+      case 15:
+      case 6:
         this.carnavalsArtist = { name: 'Team Johnny Purple', url: '/assets/johnnypurple.jpg' }
         break;
-      case 10:
-      case 4:
-      case 17:
       case 21:
-      case 27:
-      case 33:
+      case 28:
+      case 2:
+      case 8:
+      case 17:
+      case 25:
         this.carnavalsArtist = { name: 'Team Veul Gère', url: '/assets/veulgere.jpeg' }
         break;
-      case 11:
-      case 5:
-      case 18:
-      case 12:
       case 22:
-      case 28:
+      case 29:
+      case 3:
+      case 11:
+      case 18:
+      case 33:
         this.carnavalsArtist = { name: 'Team Snollebollekes', url: '/assets/snollebollekes.jpg' }
         break;
-      case 6:
-      case 19:
-      case 13:
       case 23:
-      case 29:
+      case 30:
+      case 4:
+      case 12:
+      case 19:
         this.carnavalsArtist = { name: 'Team Peter Selie', url: '/assets/peterselie.jpeg' }
         break;
-      case 7:
-      case 1:
-      case 14:
       case 24:
-      case 30:
+      case 31:
+      case 5:
+      case 13:
+      case 14:
         this.carnavalsArtist = { name: 'Team Vieze Jack', url: '/assets/viezejack.jpg' }
         break;
-      case 8:
-      case 2:
-      case 15:
-      case 25:
-      case 31:
-        this.carnavalsArtist = {name: 'Team De Alpenzusjes', url: '/assets/alpenzusjes.jpeg' }
-        break;
       default:
-        this.carnavalsArtist = {name: 'Team De Alpenzusjes', url: '/assets/alpenzusjes.jpeg' }
+        this.carnavalsArtist = { name: 'Team Vieze Jack', url: '/assets/viezejack.jpg' }
     }
   }
 }

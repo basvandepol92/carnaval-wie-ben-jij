@@ -5,13 +5,11 @@ export const PivoGroup = [
     { id: 23, name: 'Buffel'},
     { id: 24, name: 'Willem'},
     { id: 25, name: 'Kobes'},
-    { id: 26, name: 'Bart'},
     { id: 27, name: 'Lars'},
     { id: 28, name: 'Tim'},
     { id: 29, name: 'Dirk'},
     { id: 30, name: 'Kian'},
     { id: 31, name: 'Thijs'},
-    { id: 32, name: 'Stijn'},
     { id: 33, name: 'Renée'}
   ]
 export const Pivo = 'Pivo\'s'
