@@ -20,6 +20,11 @@ export class ResultComponent implements OnInit {
   ngOnInit(): void {
     this.selectedPerson = this.persons.find((person) => person.id === parseInt(this._activatedRoute.snapshot.params.id))
 
+    if(!(this.selectedPerson && this.selectedPerson.id)) {
+      this.setUnselectedPerson();
+      return;
+    }
+
     switch (this.selectedPerson.id) {
       case 20:
       case 27:
@@ -60,7 +65,11 @@ export class ResultComponent implements OnInit {
         this.carnavalsArtist = { name: 'Team Vieze Jack', url: '/assets/viezejack.jpg' }
         break;
       default:
-        this.carnavalsArtist = { name: 'Team Vieze Jack', url: '/assets/viezejack.jpg' }
+        this.setUnselectedPerson();
     }
+  }
+
+  setUnselectedPerson() {
+    this.carnavalsArtist = { name: 'Team Vieze Jack', url: '/assets/viezejack.jpg' }
   }
 }
